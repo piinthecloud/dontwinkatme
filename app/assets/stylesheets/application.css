@@ -46,6 +46,18 @@
    margin:0px;
  }
 
+ .error-page{
+   margin: 15px;
+ }
+
+ h4{
+    /*display: inline;*/
+    font-size: 25px;
+    font-weight: 100;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+
  /*.col {
    margin-top: 20px;
    display: center;
