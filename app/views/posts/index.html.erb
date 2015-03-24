@@ -1,15 +1,17 @@
-<h1>
-  there is supposed to be stuff here
-</h1>
 
 
-<div class="col2 col-sm-4">
-  <h1>Posts</h1>
+<div class="container">
+  <div class="row">
+        <div class="col-md-8">
+          <% @posts.each do |post|%>
+          <h3><%= post.title %></h3>
+            <p><%= post.text %></p>
+            <% end %>
 
-  <%= bootstrap_form_for (@post, label_errors: true)  do |f| %>
-    <%= f.text_field :title, label: "Title" %>
-    <%= f.text_area :text, label: "Description" %>
-    <%= f.submit %>
+          </div>
 
-  <% end %>
+          <div class="col-md-4">
+          <%= render "new" %>
+        </div>
+  </div>
 </div>

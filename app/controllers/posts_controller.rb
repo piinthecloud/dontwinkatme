@@ -4,7 +4,7 @@ class PostsController < ApplicationController
     @posts = Post.all
     @post = Post.new
   end
-  
+
   def new
     @post = Post.new
   end
