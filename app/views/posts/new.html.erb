@@ -3,6 +3,7 @@
 
   <%= bootstrap_form_for @post do |f| %>
     <%= f.text_field :title, label: "Title" %>
+    <%= f.text_field :alias, prepend: "@",  help: "These experiences are anonymous. You can make up any user name you want.", label: "@username" %>
     <%= f.text_area :text, label: "Description" %>
     <%= f.submit %>
 
