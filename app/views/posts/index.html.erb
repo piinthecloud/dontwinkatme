@@ -1,0 +1,15 @@
+<h1>
+  there is supposed to be stuff here
+</h1>
+
+
+<div class="col2 col-sm-4">
+  <h1>Posts</h1>
+
+  <%= bootstrap_form_for (@post, label_errors: true)  do |f| %>
+    <%= f.text_field :title, label: "Title" %>
+    <%= f.text_area :text, label: "Description" %>
+    <%= f.submit %>
+
+  <% end %>
+</div>
